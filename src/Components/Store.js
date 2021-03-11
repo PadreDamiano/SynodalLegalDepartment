@@ -78,6 +78,11 @@ const store = {
         {name: "Чернівецька  єпархія", id: 46, eventKey: 46},
         {name: "Чернігівська  єпархія", id: 47, eventKey: 47},
         {name: "Шепетівська  єпархія", id: 48, eventKey: 48}
+    ],
+    data: [
+        {id: 1, name: 'Gob', value: '2'},
+        {id: 2, name: 'Buster', value: '5'},
+        {id: 3, name: 'George Michael', value: '4'}
     ]
 }
 
