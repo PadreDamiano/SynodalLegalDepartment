@@ -4,7 +4,7 @@ class Observe extends Component {
     render() {
         return (
             <div>
-                Observe
+
             </div>
         );
     }

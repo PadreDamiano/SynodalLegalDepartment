@@ -25,27 +25,9 @@ class Header extends Component {
                                 <Nav.Link href='/'>Додому</Nav.Link>
                                 <Nav.Link href='/diocese'>Єпархії</Nav.Link>
                                 <Nav.Link href='/region'>Області</Nav.Link>
-                                <Nav.Link href='/observe'>Відстеження</Nav.Link>
+                                <Nav.Link href='/observe'>Додати</Nav.Link>
                                 <Nav.Link href='/actual'>Актуальні засідання</Nav.Link>
-                                {/*<NavDropdown title="Єпархії" id="basic-nav-dropdown">
-                                    <NavDropdown.Item href="/diocese/kyiv">Киівська</NavDropdown.Item>
-                                    <NavDropdown.Item href="/diocese/chernigov">Чернігівська</NavDropdown.Item>
-                                    <NavDropdown.Item href="/diocese/odessa">Одеська</NavDropdown.Item>
-                                    <NavDropdown.Divider/>
-                                    <NavDropdown.Item href="#action/3.4">Інші</NavDropdown.Item>
-                                </NavDropdown>
-                                <NavDropdown title="Області" id="basic-nav-dropdown">
-                                    <NavDropdown.Item href="/region/kyiv">Київська</NavDropdown.Item>
-                                    <NavDropdown.Item href="/region/chernigov">Чернігівська</NavDropdown.Item>
-                                    <NavDropdown.Item href="/region/odess  a">Одеська</NavDropdown.Item>
-                                    <NavDropdown.Divider/>
-                                    <NavDropdown.Item href="#action/3.4">Інші</NavDropdown.Item>
-                                </NavDropdown>*/}
                             </Nav>
-                            <Form inline>
-                                <FormControl type="text" placeholder="Пошук" className=" mr-sm-2"/>
-                                <Button variant='outline-info'>Пошук</Button>
-                            </Form>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
