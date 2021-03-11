@@ -1,7 +1,7 @@
 import React from "react";
-import {Col, Nav} from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 
-const Navbar = (props) => {
+const NavBar = (props) => {
     return (
         <div>
             <Nav  variant="pills" className='flex-column mt-2'>
@@ -12,4 +12,4 @@ const Navbar = (props) => {
         </div>
     )
 }
-export default Navbar;
+export default NavBar;
