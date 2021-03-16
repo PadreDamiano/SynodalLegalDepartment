@@ -29,7 +29,7 @@ function onDeleteRow(rowKeys) {
     alert('You deleted: ' + rowKeys)
 }
 
-class Table extends Component {
+class TableAll extends Component {
     render() {
         const selectRowProp = {
             mode: 'checkbox',
@@ -89,4 +89,4 @@ class Table extends Component {
     }
 }
 
-export default Table;
+export default TableAll;

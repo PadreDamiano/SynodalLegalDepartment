@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Table from "../Table/Table";
+import TableAll from "../Table/TableAll";
 import store from "../Store/Store";
 
 
@@ -7,7 +7,7 @@ class Observe extends Component {
     render() {
         return (
             <div>
-                <Table data={store.diocese}/>
+                <TableAll data={store.diocese}/>
             </div>
         );
     }
