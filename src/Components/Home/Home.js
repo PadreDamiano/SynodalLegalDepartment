@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
+import TableAll from "../Table/TableAll";
 
 class Home extends Component {
     render() {
         return (
             <div>
-                Hello
+                <TableAll />
             </div>
         );
     }

@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import TableAll from "../Table/TableAll";
-import store from "../Store/Store";
+import storeRow from "../Store/StoreRow";
 
 
 class Observe extends Component {
     render() {
         return (
             <div>
-                <TableAll data={store.diocese}/>
+                <TableAll data={storeRow.diocese}/>
             </div>
         );
     }

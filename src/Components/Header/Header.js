@@ -1,15 +1,18 @@
-import React, {Component} from 'react';
-import {Container, Nav, Navbar} from 'react-bootstrap';
+import React from 'react';
+import {Container, Nav, Navbar, NavDropdown} from 'react-bootstrap';
 import logo from './logo.png';
+import NavBar from "../NavBar/NavBar";
 
-class Header extends Component {
-    render() {
+const Header = (props) => {
+
+    let diocese = props.store.diocese.map(el => <NavBar name={el.name} id={`/diocese/${el.id}`}/>);
+    let region = props.store.region.map(el => <NavBar  name={el.name} id={`/region/${el.id}`}/>);
         return (
             <>
-                <Navbar collapseOnSelect
+                <Navbar
+                    collapseOnSelect
                         expand='md'
-                        bg='dark'
-                        variant='dark'>
+                    bg="light" variant="light">
                     <Container>
                         <Navbar.Brand href="/">
                             <img src={logo}
@@ -23,17 +26,23 @@ class Header extends Component {
                         <Navbar.Collapse id='responsive-navbar-nav'>
                             <Nav className='mr-auto'>
                                 <Nav.Link href='/'>Додому</Nav.Link>
-                                <Nav.Link href='/diocese'>Єпархії</Nav.Link>
-                                <Nav.Link href='/region'>Області</Nav.Link>
-                                <Nav.Link href='/observe'>Додати</Nav.Link>
+                                <NavDropdown title="Єпархії" id="collasible-nav-dropdown">
+                                    {diocese}
+                                    <NavDropdown.Divider />
+                                    <NavDropdown.Item href="/diocese">Всі єпархії</NavDropdown.Item>
+                                </NavDropdown>
+                                <NavDropdown title="Області" id="collasible-nav-dropdown">
+                                    {region}
+                                    <NavDropdown.Divider />
+                                    <NavDropdown.Item href="/region">Всі області</NavDropdown.Item>
+                                </NavDropdown>
                                 <Nav.Link href='/actual'>Актуальні засідання</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
             </>
-        );
-    }
+        )
 }
 
 export default Header;
