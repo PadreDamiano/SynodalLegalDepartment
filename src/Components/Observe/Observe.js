@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Table from "../Table";
-import store from "../Store";
+import Table from "../Table/Table";
+import store from "../Store/Store";
 
 
 class Observe extends Component {

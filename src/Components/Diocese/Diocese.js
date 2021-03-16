@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {Col, Container, Row, Tab} from "react-bootstrap";
-import store from "../Store";
+import store from "../Store/Store";
 import NavBar from "../NavBar";
-import TabContent from "../TabContent";
+import TabContent from "../Table/TabContent";
 
 class Diocese extends Component {
     render() {
